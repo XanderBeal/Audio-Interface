@@ -51,8 +51,27 @@
           "min_clearance": 0.5
         }
       },
-      "diff_pair_dimensions": [],
-      "drc_exclusions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        },
+        {
+          "gap": 0.25,
+          "via_gap": 0.3,
+          "width": 0.1674
+        }
+      ],
+      "drc_exclusions": [
+        "lib_footprint_mismatch|90220000|70265000|e4b70dfc-3c6b-4b76-99a8-2000f19c1c1e|00000000-0000-0000-0000-000000000000",
+        "silk_edge_clearance|121540000|51090000|591fc080-1433-467e-a1c7-906c0d74e888|2ad8682c-383d-4aac-bd2a-b7d0150ff679",
+        "silk_edge_clearance|121540000|62330000|591fc080-1433-467e-a1c7-906c0d74e888|2c7300ee-f1d4-414a-bda7-64263d645271",
+        "starved_thermal|116880000|67015000|a3512785-90a9-4cc7-b7c6-fdf4b6952591|a4d9600a-0ab1-4d25-bc3f-1e9fcf203bdb|F.Cu",
+        "starved_thermal|90892500|73855000|a3512785-90a9-4cc7-b7c6-fdf4b6952591|7eb90a63-a9a3-45fd-8409-9424ec1c0b24|F.Cu",
+        "starved_thermal|93685000|71035000|a3512785-90a9-4cc7-b7c6-fdf4b6952591|9ed90d79-75fc-4045-a3e5-f5f72bf819e3|F.Cu",
+        "starved_thermal|93845000|75265000|a3512785-90a9-4cc7-b7c6-fdf4b6952591|0ed49b74-8322-48a4-afb1-11f0216b7bf4|F.Cu"
+      ],
       "meta": {
         "version": 2
       },
@@ -171,7 +190,13 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
+      "track_widths": [
+        0.0,
+        0.167,
+        0.2,
+        0.3,
+        0.5
+      ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -198,7 +223,12 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        }
+      ],
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
@@ -486,7 +516,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "../../Gerber Files/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
